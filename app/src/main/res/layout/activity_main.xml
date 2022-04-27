@@ -12,7 +12,7 @@
 
     <Spinner
         android:id="@+id/planets_spinner"
-        android:layout_width="81dp"
+        android:layout_width="117dp"
         android:layout_height="42dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -20,13 +20,13 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="372dp"
-        android:layout_height="489dp"
+        android:layout_width="358dp"
+        android:layout_height="485dp"
         android:layout_marginTop="20dp"
         android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="@+id/EditText"
-        app:layout_constraintStart_toStartOf="@+id/planets_spinner"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintStart_toStartOf="@+id/btnGetSource"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetSource">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,35 +47,36 @@
         android:id="@+id/textView2"
         android:layout_width="86dp"
         android:layout_height="36dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Enter_URL"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/EditText"
-        android:layout_width="283dp"
-        android:layout_height="42dp"
+        android:layout_width="237dp"
+        android:layout_height="43dp"
         android:layout_marginTop="28dp"
-        android:text="@string/SampleText"
+        android:hint="@string/SampleText"
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toEndOf="@+id/planets_spinner"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.01" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="157dp"
+        android:id="@+id/btnGetSource"
+        android:layout_width="212dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
-        android:text="Button"
+        android:onClick="GetSource"
+        android:text="@string/btnGetSource"
         app:layout_constraintEnd_toEndOf="@+id/EditText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/planets_spinner"
