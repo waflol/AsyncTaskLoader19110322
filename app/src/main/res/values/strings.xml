@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">getWebSource</string>
+    <string name="app_name">WhoWroteItLoader</string>
+
+    <string name="Enter_URL">Enter URL:</string>
+    <string name="btnGetSource">GET PAGE SOURCE</string>
+    <string name="SampleText">www.example.com</string>
+    <string-array name="spinner_items">
+        <item>http://</item>
+        <item>https://</item>
+    </string-array>
 </resources>
